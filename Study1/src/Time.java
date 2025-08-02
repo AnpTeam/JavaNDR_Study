@@ -37,7 +37,7 @@ public class Time {
     }
 
     public void setMinute(int minute){
-        if (minute < 0 || minute >60) {
+        if (minute < 0 || minute >=60) {
             throw new IllegalArgumentException("Minute must between 0 and 60");
         }
         //Default
@@ -45,7 +45,7 @@ public class Time {
     }
 
     public void setSecond(int second){
-        if (second < 0 || second >60) {
+        if (second < 0 || second >=60) {
             throw new IllegalArgumentException("Second must between 0 and 60");
         }
         //Default
